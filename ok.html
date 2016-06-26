@@ -1,4 +1,4 @@
-
+﻿
 
 <!DOCTYPE html>
 <html lang="en">
@@ -79,26 +79,8 @@
 				background-color: #24B2EB;
 			}
 		</style>
-		<script language="javascript">
-			var WaitTime = 10;
-			function WaitDo(){
-				if(WaitTime > 0){
-					putOutMsg.innerHTML = "本页面将在"+ WaitTime +"秒钟后自动关闭";
-					WaitTime --;
-					setTimeout("WaitDo()",1000);
-				}
-				else
-				{
-					window.close();
-				}
-			}
-			function CloseWindow_Click()
-			{
-				window.close();
-			}
-		</script>
 	</head>
-	<body onLoad="WaitDo();">
+	<body>
 		<div id="wrapper">
 			<div id="container">
 				<br>
@@ -111,9 +93,6 @@
 					<br>
 					<h4><span class="tip"> 10分钟内系统会自动入账</span></h4>
 					
-					<br>
-					<span id="putOutMsg" class="OpenFont"></span>
-					<br>
 					<br>
 					<a href="/" title="Home" class="button">关闭本窗口</a><br />
 
